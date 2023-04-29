@@ -8,11 +8,20 @@ namespace primer_parcial_solid_transporte
 {
     public class Avion : ITransporteAereo
     {
-        public string _nombre;
-        public int _velocidadActual;
-        public int _velocidadMaxima;
-        public int _alturaActual;
-        public int _alturaMaxima;
+        private string _nombre;
+        private int _velocidadActual;
+        private int _velocidadMaxima;
+        private int _alturaActual;
+        private int _alturaMaxima;
+
+        public Avion(string nombre, int velocidadActual, int velocidadMaxima, int alturaActual, int alturaMaxima)
+        {
+            this._nombre = nombre;
+            this._velocidadActual = velocidadActual;
+            this._velocidadMaxima = velocidadMaxima;
+            this._alturaActual = alturaActual;
+            this._alturaMaxima = alturaMaxima;
+        }
 
         public void Acelerar(int velocidad)
         {

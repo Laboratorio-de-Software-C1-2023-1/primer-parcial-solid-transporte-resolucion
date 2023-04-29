@@ -10,20 +10,10 @@ namespace primer_parcial_solid_transporte
 
             List<ITransporteAereo> transportes = new List<ITransporteAereo>();
 
-            Avion avion1 = new Avion();
-            avion1._nombre = "AVION 01";
-            avion1._velocidadActual = 0;
-            avion1._velocidadMaxima = 100;
-            avion1._alturaActual = 0;
-            avion1._alturaMaxima = 100;
+            Avion avion1 = new Avion("AVION 01", 0, 100, 0, 100);
             transportes.Add(avion1);
 
-            Avion avion2 = new Avion();
-            avion2._nombre = "AVION 02";
-            avion2._velocidadActual = 0;
-            avion2._velocidadMaxima = 100;
-            avion2._alturaActual = 0;
-            avion2._alturaMaxima = 100;
+            Avion avion2 = new Avion("AVION 02", 0, 100, 0, 100);
             transportes.Add(avion2);
 
             List<ITransporteTerrestre> transportesTerrestres = new List<ITransporteTerrestre>();
