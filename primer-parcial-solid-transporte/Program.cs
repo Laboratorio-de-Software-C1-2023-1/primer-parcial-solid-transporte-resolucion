@@ -18,10 +18,7 @@ namespace primer_parcial_solid_transporte
 
             List<ITransporteTerrestre> transportesTerrestres = new List<ITransporteTerrestre>();
 
-            Tren tren1 = new Tren();
-            tren1._nombre = "TREN 01";
-            tren1._velocidadActual = 0;
-            tren1._velocidadMaxima = 100;
+            Tren tren1 = new Tren("TREN 01", 0, 100);
             transportesTerrestres.Add(tren1);
 
             Console.WriteLine("Inicio del viaje :)");

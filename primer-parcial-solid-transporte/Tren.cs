@@ -8,9 +8,16 @@ namespace primer_parcial_solid_transporte
 {
     public class Tren : ITransporteTerrestre
     {
-        public string _nombre;
-        public int _velocidadActual;
-        public int _velocidadMaxima;
+        private string _nombre;
+        private int _velocidadActual;
+        private int _velocidadMaxima;
+
+        public Tren(string nombre, int velocidadActual, int velocidadMaxima)
+        {
+            this._nombre = nombre;
+            this._velocidadActual = velocidadActual;
+            this._velocidadMaxima = velocidadMaxima;
+        }
 
         public void Acelerar(int velocidad)
         {
